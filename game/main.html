@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Игра</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="mapManager.onLoad()">
+
+<div class = "left">
+    <div class = "left2">
+        <button onclick="player.setLevel(1); player.setMoney(startLevelMoney); gameManager.level()" style = "width: 150px; height: 35px">1 УРОВЕНЬ</button>
+        <br></br>
+        <button onclick="player.setLevel(2); player.setMoney(startLevelMoney); gameManager.level()" style = "width: 150px; height: 35px" id = "btn" disabled = true>2 УРОВЕНЬ</button>
+        <br></br>
+        <button onclick="gameManager.info()" style = "width: 150px; height: 35px">Справка</button>
+        <br></br>
+        <div class="popup__bg">
+            <div class="popup">
+<!--                <button onclick="record.DrawRecordTable()" style = "width: 150px; height: 35px">Показать</button>-->
+
+                <img src="close.png" class="close-popup" id = "figure_img">
+                <div id="modal-table" class="modal" >
+                    <div class="modal-content">
+                        <table id="records-table" border="1">
+                        </table>
+                    </div>
+            </div>
+            </div>
+        </div>
+<!--        <script>record.DrawRecordTable()</script>-->
+            <button style = "width: 150px; height: 35px"><a href="#" class="open-popup"> Таблица рекордов</a></button>
+    </div>
+    <div class = "right2">
+        <br></br>
+        <canvas id="canvas"></canvas>
+    </div>
+
+</div>
+
+<!--<div class = "center" >-->
+<!--    <canvas id="canvas"></canvas>-->
+<!--    <br></br>-->
+<!--</div>-->
+
+<div class = "right" id = "frame">
+    <h2> Игрок: <div id = "player-name"> </div> </h2>
+    <h3><p class="info" id="game_level"> Текущий уровень:  <div id = "id_level"> </div> </p></h3>
+    <h3><p class="info" id="game_money"> Монеты:  <div id = "id_money"> </div> </p></h3>
+    <h3><p class="info" id="game_life"> Жизни:  <div id = "id_life"> </div> </p></h3>
+
+    <h3>Клавиши для управления:</h3>
+    <p>Стрелка влево - пермещение игрока влево</p>
+    <p>Стрелка вправо - перемещение игрока вправо</p>
+    <p>Стрелка вниз - пермещение игрока вниз</p>
+    <p>Стрелка вверх - пермещение игрока вверх</p>
+</div>
+<!--<button onclick="Game()">Начать игру</button>-->
+<script src="js/mapManager.js"></script>
+<script src="js/gameManager.js"></script>
+<script src="js/saveUserName.js"></script>
+<script src="js/audioManager.js"></script>
+<script src="js/objectManager.js"></script>
+<script src="js/eventsManager.js"></script>
+<script src="js/physicManager.js"></script>
+<script src="js/recordTableManager.js"></script>
+<script src="js/spritesManager.js"></script>
+<script>
+    audioManager.init()
+</script>
+</body>
+</html>
