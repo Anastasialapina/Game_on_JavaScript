@@ -1,13 +1,13 @@
 # Game on JavaScript
 
 
-This paper describes the process of developing a game in JavaScript. To develop the developed program "Tiled" - to create the levels of the game, required to create web applications HTML, CSS, JS - codes. The game consists of 2 levels, the main goal is to reach the exit, collect the largest number of coins at each level 3 life, which can be lost when meeting an enemy or a fireball. When passing level 1, level 2 becomes available.
+This paper describes the process of developing a game in JavaScript. The program [Tiled](https://www.mapeditor.org/) was used for development - to create levels of the game. As well as HTML, CSS, and JS codes necessary for creating a web application.. The game consists of 2 levels, the main goal is to reach the exit, collect the largest number of coins. At each level 3 lifes, which can be lost at colliding with an enemy or a fireball. When passing level 1, level 2 becomes available.
 
 ### Try to play now [https://lapinaanastasia.itch.io/game-on-javascript](https://lapinaanastasia.itch.io/game-on-javascript)
 
 ## Installation
 
-The program was written using WebShtorm so no additional installation is required.
+The program was written using WebStorm so no additional installation is required. It can be run in any IDE that supports web development.
 
 ## Game appearance
 
