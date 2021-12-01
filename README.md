@@ -9,7 +9,7 @@ This paper describes the process of developing a game in JavaScript. The program
 
 The program was written using WebStorm so no additional installation is required. It can be run in any IDE that supports web development.
 
-## Game appearance
+## Game
 
 This game is a field with a player, chests that add coins, fireballs that reduce the number of lives, and enemies. At the start of the game, only 1 level is available, and 2 is blocked until 1 is completed. Start page - enter the game:
 ![alt text](https://i.ibb.co/fXkVmSY/entry.png)
@@ -20,7 +20,7 @@ This game is a field with a player, chests that add coins, fireballs that reduce
 ## 2nd level:
 ![alt text](https://i.ibb.co/L888LhR/2.png)
 
-## Realization
+## Implementation
 The first page is the page where the player enters their name. When you enter the page, the last entered name is entered into the input field, which is saved in LocalStorage.
 
 The game page is a screen where the buttons are located: "LEVEL 1" - to start the game at level 1, "LEVEL 2" - activated when passing level 1, "Help" - a modal window appears with a description of the game, "Leaderboard" - for displaying records. The page also displays a field implemented using canvas and interface elements: player name, level, current number of coins, lives and information about control keys.
